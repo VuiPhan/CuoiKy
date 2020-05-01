@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CuoiKy", "CuoiKy\CuoiKy.dtproj", "{481F7B59-2D38-4753-8070-65B9D2643DFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{481F7B59-2D38-4753-8070-65B9D2643DFC}.Development|Default.ActiveCfg = Development
+		{481F7B59-2D38-4753-8070-65B9D2643DFC}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87319B24-D27F-41C5-BA2C-E064EFC49315}
+	EndGlobalSection
+EndGlobal
