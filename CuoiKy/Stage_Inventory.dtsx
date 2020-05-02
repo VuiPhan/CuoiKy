@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_Inventory"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{DF2FCF94-6128-449D-8A24-E9E19194848D}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{991BC6CA-88B5-4C41-BDFA-2DB4134BC21B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -604,6 +604,10 @@ FROM            Producer INNER JOIN
           Id="Package\DF - Stage Products"
           TopLeft="181,185" />
         <NodeLayout
+          Size="191,42"
+          Id="Package\DF - Stage ProductType"
+          TopLeft="395,191" />
+        <NodeLayout
           Size="209,42"
           Id="Package\SQL - Truncate Stage Table"
           TopLeft="178,58" />
@@ -641,10 +645,6 @@ FROM            Producer INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="191,42"
-          Id="Package\DF - Stage ProductType"
-          TopLeft="395,191" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="316,100">

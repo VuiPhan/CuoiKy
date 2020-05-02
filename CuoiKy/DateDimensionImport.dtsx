@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DateDimensionImport"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{850384E6-E614-4A4C-9D12-0C94C7A7EC5F}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{541E86E4-0890-4921-B95A-E52E39F2568A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
