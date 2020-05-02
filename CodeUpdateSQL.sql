@@ -3,6 +3,7 @@ CREATE DATABASE ShopBanDoTheThaoStage
 CREATE DATABASE ExternalSourcesTheThao
 CREATE DATABASE ShopBanDoTheThaoDW
 USE ShopBanDoTheThaoDW
+--abc
 CREATE  TABLE  DimProduct
 (
 	ProductKey int identity not null,
