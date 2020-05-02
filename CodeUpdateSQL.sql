@@ -3,7 +3,7 @@ CREATE DATABASE ShopBanDoTheThaoStage
 CREATE DATABASE ExternalSourcesTheThao
 CREATE DATABASE ShopBanDoTheThaoDW
 USE ShopBanDoTheThaoDW
---update xóa đi
+--update xóa đi abc
 CREATE  TABLE  DimProduct
 (
 	ProductKey int identity not null,
