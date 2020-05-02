@@ -9,6 +9,7 @@ USE ShopBanDoTheThaoDW
 --xem cách check in nè
 --đã làm bao giờ chưa?
 --vuivuivui
+--VUIPHAN sửa
 
 CREATE  TABLE  DimProduct
 (
