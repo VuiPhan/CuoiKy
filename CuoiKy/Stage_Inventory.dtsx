@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_Inventory"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{D24DD1D5-20EA-485F-9AFE-2DCE48787C74}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{991BC6CA-88B5-4C41-BDFA-2DB4134BC21B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -537,6 +537,21 @@ FROM            Producer INNER JOIN
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\DF - Stage ProductType"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F9070DC4-08E2-460B-BD5D-FA0E179AA956}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DF - Stage ProductType"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\SQL - Truncate Stage Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -563,6 +578,14 @@ FROM            Producer INNER JOIN
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\DF - Stage Products" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C199C8A9-B1A1-4E59-8E2B-B4E8A7CC1C8F}"
+      DTS:From="Package\SQL - Truncate Stage Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\DF - Stage ProductType" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -575,15 +598,19 @@ FROM            Producer INNER JOIN
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="209,42"
-          Id="Package\SQL - Truncate Stage Table"
-          TopLeft="178,58" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="173,42"
           Id="Package\DF - Stage Products"
           TopLeft="181,185" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\DF - Stage ProductType"
+          TopLeft="395,191" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\SQL - Truncate Stage Table"
+          TopLeft="178,58" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="282.5,100">
@@ -610,6 +637,40 @@ FROM            Producer INNER JOIN
                     Point3="-15,46.5" />
                   <mssgle:LineSegment
                     End="-15,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="316,100">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="174.5,91"
+              Start="0,0"
+              End="174.5,83.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.8148148148148" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.8148148148148"
+                    Point2="0,36.8148148148148"
+                    Point3="4,36.8148148148148" />
+                  <mssgle:LineSegment
+                    End="170.5,36.8148148148148" />
+                  <mssgle:CubicBezierSegment
+                    Point1="170.5,36.8148148148148"
+                    Point2="174.5,36.8148148148148"
+                    Point3="174.5,40.8148148148148" />
+                  <mssgle:LineSegment
+                    End="174.5,83.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -660,14 +721,6 @@ FROM            Producer INNER JOIN
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DF - Stage Products\SRC - ShopBanDoTheThaoNorthwind - Products">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\DF - Stage Products\DST - ShopBanDoTheThaoStage - stgProducts">
     <Properties>
       <Property>
@@ -677,6 +730,14 @@ FROM            Producer INNER JOIN
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage Products\SRC - ShopBanDoTheThaoNorthwind - Products">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
