@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CuoiKy", "CuoiKy\CuoiKy.dtproj", "{481F7B59-2D38-4753-8070-65B9D2643DFC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document-SQL", "Document-SQL", "{265A4274-03CD-468B-AE06-A933990B3121}"
+	ProjectSection(SolutionItems) = preProject
+		CodeUpdateSQL.sql = CodeUpdateSQL.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
