@@ -53,5 +53,5 @@ FROM Producer INNER JOIN
                          ProductType ON Product.ProductTypeID = ProductType.ProductTypeID INNER JOIN
                          Supplier ON Product.SupplierID = Supplier.IDSupplier
 
---end VuiPhan 5-2-2020
+--end VuiPhan 5-2-2021
 
