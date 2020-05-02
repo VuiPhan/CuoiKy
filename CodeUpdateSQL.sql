@@ -3,14 +3,6 @@ CREATE DATABASE ShopBanDoTheThaoStage
 CREATE DATABASE ExternalSourcesTheThao
 CREATE DATABASE ShopBanDoTheThaoDW
 USE ShopBanDoTheThaoDW
---update xóa đinenen
---update xóa đi abcdxyzzzddddzzzzzssssssssvuideptrai
---Cập nhật 2
---xem cách check in nè
---đã làm bao giờ chưa?
---vuivuivui
---VUIPHAN sửa
-
 CREATE  TABLE  DimProduct
 (
 	ProductKey int identity not null,
@@ -45,9 +37,6 @@ CREATE TABLE [DimDate](
 	[IsAWeekday] varchar(1) NOT NULL DEFAULT (('N')),
 	constraint pkNorthwindDimDate PRIMARY KEY ([DateKey])
 )
-
-
-
 -- code để load vào stage Products
 --thêm stg 
 USE ShopBanDoTheThaoNorthwind
