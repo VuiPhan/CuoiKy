@@ -4,7 +4,7 @@ CREATE DATABASE ExternalSourcesTheThao
 CREATE DATABASE ShopBanDoTheThaoDW
 USE ShopBanDoTheThaoDW
 --update xóa đinenen
---update xóa đi abcdxyzzzzzzzz
+--update xóa đi abcdxyzzzzzzzzssss
 CREATE  TABLE  DimProduct
 (
 	ProductKey int identity not null,
