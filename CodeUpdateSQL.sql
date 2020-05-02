@@ -3,6 +3,11 @@ CREATE DATABASE ShopBanDoTheThaoStage
 CREATE DATABASE ExternalSourcesTheThao
 CREATE DATABASE ShopBanDoTheThaoDW
 USE ShopBanDoTheThaoDW
+--update xóa đinenen
+--update xóa đi abcdxyzzzddddzzzzzssssssssvuideptrai
+--Cập nhật 2
+--xem cách check in nè
+--đã làm bao giờ chưa?
 
 CREATE  TABLE  DimProduct
 (
