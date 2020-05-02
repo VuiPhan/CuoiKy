@@ -3,6 +3,7 @@ CREATE DATABASE ShopBanDoTheThaoStage
 CREATE DATABASE ExternalSourcesTheThao
 CREATE DATABASE ShopBanDoTheThaoDW
 USE ShopBanDoTheThaoDW
+--abc
 --def
 CREATE  TABLE  DimProduct
 (
