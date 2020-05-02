@@ -8,8 +8,6 @@ USE ShopBanDoTheThaoDW
 --Cập nhật 2
 --xem cách check in nè
 --đã làm bao giờ chưa?
-
-
 CREATE  TABLE  DimProduct
 (
 	ProductKey int identity not null,
