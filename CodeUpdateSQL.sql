@@ -24,6 +24,24 @@ CREATE  TABLE  DimProduct
 	-- keys
 	CONSTRAINT  pkNorthwindDimProductKey primary key (ProductKey),	
 );
+CREATE  TABLE  DimZipCode
+(
+	ZipCodeKey int identity not null,
+	-- attributes
+	IDZipCode int not null, 
+	[Province/City] nvarchar(50)  null,
+	Wards nvarchar(50) default('N')  null,
+	District nvarchar(50)  null,
+	Country nvarchar(100)  null,
+	Continents nvarchar(100)  NULL,
+	-- metadata
+	RowIsCurrent bit default(1) not null,
+	RowStartDate datetime default('1/1/1900') not null,
+	RowEndDate datetime default('12/31/9999') not null,
+	RowChangeReason nvarchar(200) default ('N/A') not null,
+	-- keys
+	CONSTRAINT  pkNorthwindDimZipCodeKey primary key (ZipCodeKey),	
+);
 CREATE TABLE [DimDate](
 	[DateKey] [int] NOT NULL,
 	[Date] [datetime] NULL,
@@ -87,9 +105,9 @@ CREATE TABLE DimMembers (
    -- Attributes
 ,  [IDMember]  INT    NOT NULL
 ,  [FullName]  nvarchar(100)   NOT NULL
-,  [Address] nvarchar(100)
-,  [Email] nvarchar(50)
-,  [PhoneNumber] nvarchar(12)
+,  [Address] nvarchar(MAX)
+,  [Email] nvarchar(255)
+,  [PhoneNumber] nvarchar(50)
 	-- metadata
 ,  [RowIsCurrent]  bit  DEFAULT 1 NOT NULL
 ,  [RowStartDate]  datetime  DEFAULT '12/31/1899' NOT NULL
@@ -105,6 +123,7 @@ CREATE TABLE FactSales (
 ,  [IDOrder]  int   NOT NULL
 	-- dimensions
 ,  [CustomerKey]  int   NOT NULL
+,  [ZipCodeKey] int NOT NULL
 	-- facts
 ,  [Amount]  int   NOT NULL
 ,  [Price]  decimal(25,4) NOT NULL
@@ -124,23 +143,46 @@ CREATE TABLE FactSales (
 , CONSTRAINT fkNorthwindFactSalesProductTypeKey FOREIGN KEY (ProductTypeKey )
 	REFERENCES dbo.DimProductType (ProductTypeKey)
 
+, CONSTRAINT fkNorthwindFactSalesZipCodeKey FOREIGN KEY (ZipCodeKey)
+	REFERENCES dbo.DimZipCode (ZipCodeKey)
+
 , CONSTRAINT fkNorthwindFactSalesDateKey FOREIGN KEY (DateKey)
 	REFERENCES DimDate (DateKey)
 ) 
 ;
+CREATE TABLE FactInventory (
+   [DateKey]  int   NOT NULL
+,  [TotalQuantitySoldInDay]  int   NOT NULL
+,  [TotalMoneySoldInDay]  DECIMAL(12,1)   NOT NULL
+   --keys
+, CONSTRAINT pkNorthwindFactInventory PRIMARY KEY ( [DateKey] )
 
-SELECT * FROM dbo.FactSales join dbo.DimDate ON DimDate.DateKey = FactSales.DateKey
-
-
+--, CONSTRAINT fkNorthwindFactSalesProductKey FOREIGN KEY ( ProductKey )
+	--REFERENCES DimProduct (ProductKey)
+) 
+;
+CREATE TABLE DimColorProducts(
+   [ColorProductKey]  int IDENTITY  NOT NULL
+   -- Attributes
+,  [IDColor]  INT    NOT NULL
+,  [NameColor]  nvarchar(100)   NOT NULL
+,  [Description] nvarchar(MAX)
+	-- metadata
+,  [RowIsCurrent]  bit  DEFAULT 1 NOT NULL
+,  [RowStartDate]  datetime  DEFAULT '12/31/1899' NOT NULL
+,  [RowEndDate]  datetime  DEFAULT '12/31/9999' NOT NULL
+,  [RowChangeReason]  nvarchar(200)   NULL
+, CONSTRAINT pkNorthwindDimColorProducts PRIMARY KEY ( [ColorProductKey] )
+);
 -- Kết thức sử dụng database ShopBanDoTheThaoDW
 -- Bắt đầu sử dụng database ShopBanDoTheThaoNorthwind
 USE ShopBanDoTheThaoNorthwind
 GO 
-DELETE dbo.DetailImport
-DELETE dbo.ImportBill 
-DELETE dbo.DetailOrder
-DELETE dbo.[Order]
-UPDATE dbo.Product SET SalesedQuantity = 0, RemainingQuantity = 0 
+--DELETE dbo.DetailImport
+--DELETE dbo.ImportBill 
+--DELETE dbo.DetailOrder
+--DELETE dbo.[Order]
+--UPDATE dbo.Product SET SalesedQuantity = 0, RemainingQuantity = 0 
 
 GO 
 -- Khi nhập hàng sẽ tăng số lượng tồn kho của sản phẩm
@@ -387,6 +429,11 @@ VALUES  ( 8 , -- IDMember - int
 
 -- Kết thúc sử dụng database ShopBanDoTheThaoNorthwind
 -- end VuiPhan 3-5-2020
+--begin VP 6-5-2020
+-- DW
+UPDATE dbo.stgSales
+SET DeliveryDate='2019-05-03 00:00:00.000'
+--end VP 6-5-2020
 
 
 

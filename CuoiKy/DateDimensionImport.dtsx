@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DateDimensionImport"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{541E86E4-0890-4921-B95A-E52E39F2568A}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{43354201-A114-4D4C-8E21-67E47B81EC6B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -169,7 +169,7 @@
                       refId="Package\DF - Extract From Source to Stage stgDate\DST – Stage stgDate.Inputs[OLE DB Destination Input].Columns[day name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="9"
+                      cachedLength="50"
                       cachedName="day name"
                       externalMetadataColumnId="Package\DF - Extract From Source to Stage stgDate\DST – Stage stgDate.Inputs[OLE DB Destination Input].ExternalColumns[day name]"
                       lineageId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].Columns[day name]" />
@@ -177,7 +177,7 @@
                       refId="Package\DF - Extract From Source to Stage stgDate\DST – Stage stgDate.Inputs[OLE DB Destination Input].Columns[day abbrev]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="3"
+                      cachedLength="50"
                       cachedName="day abbrev"
                       externalMetadataColumnId="Package\DF - Extract From Source to Stage stgDate\DST – Stage stgDate.Inputs[OLE DB Destination Input].ExternalColumns[day abbrev]"
                       lineageId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].Columns[day abbrev]" />
@@ -312,13 +312,13 @@
                       refId="Package\DF - Extract From Source to Stage stgDate\DST – Stage stgDate.Inputs[OLE DB Destination Input].ExternalColumns[day name]"
                       codePage="1252"
                       dataType="str"
-                      length="9"
+                      length="50"
                       name="day name" />
                     <externalMetadataColumn
                       refId="Package\DF - Extract From Source to Stage stgDate\DST – Stage stgDate.Inputs[OLE DB Destination Input].ExternalColumns[day abbrev]"
                       codePage="1252"
                       dataType="str"
-                      length="3"
+                      length="50"
                       name="day abbrev" />
                     <externalMetadataColumn
                       refId="Package\DF - Extract From Source to Stage stgDate\DST – Stage stgDate.Inputs[OLE DB Destination Input].ExternalColumns[weekday flag]"
@@ -436,7 +436,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Date]</property>
+                  name="OpenRowset">[dbo].[Date2018]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -533,7 +533,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].ExternalColumns[day name]"
-                      length="9"
+                      length="50"
                       lineageId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].Columns[day name]"
                       name="day name"
                       truncationRowDisposition="FailComponent" />
@@ -544,7 +544,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].ExternalColumns[day abbrev]"
-                      length="3"
+                      length="50"
                       lineageId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].Columns[day abbrev]"
                       name="day abbrev"
                       truncationRowDisposition="FailComponent" />
@@ -727,13 +727,13 @@
                       refId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].ExternalColumns[day name]"
                       codePage="1252"
                       dataType="str"
-                      length="9"
+                      length="50"
                       name="day name" />
                     <externalMetadataColumn
                       refId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].ExternalColumns[day abbrev]"
                       codePage="1252"
                       dataType="str"
-                      length="3"
+                      length="50"
                       name="day abbrev" />
                     <externalMetadataColumn
                       refId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Output].ExternalColumns[weekday flag]"
@@ -843,14 +843,14 @@
                       refId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Error Output].Columns[day name]"
                       codePage="1252"
                       dataType="str"
-                      length="9"
+                      length="50"
                       lineageId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Error Output].Columns[day name]"
                       name="day name" />
                     <outputColumn
                       refId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Error Output].Columns[day abbrev]"
                       codePage="1252"
                       dataType="str"
-                      length="3"
+                      length="50"
                       lineageId="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension.Outputs[OLE DB Source Error Output].Columns[day abbrev]"
                       name="day abbrev" />
                     <outputColumn
@@ -1073,7 +1073,7 @@
                       refId="Package\DF - Load from stgDate to DimDate\DST - Slowly Changing Dimension DimDate.Inputs[Slowly Changing Dimension Input].Columns[day name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="9"
+                      cachedLength="50"
                       cachedName="day name"
                       externalMetadataColumnId="Package\DF - Load from stgDate to DimDate\DST - Slowly Changing Dimension DimDate.Inputs[Slowly Changing Dimension Input].ExternalColumns[DayName]"
                       lineageId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].Columns[day name]">
@@ -1410,7 +1410,7 @@
                       refId="Package\DF - Load from stgDate to DimDate\Insert Destination.Inputs[OLE DB Destination Input].Columns[day name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="9"
+                      cachedLength="50"
                       cachedName="day name"
                       externalMetadataColumnId="Package\DF - Load from stgDate to DimDate\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayName]"
                       lineageId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].Columns[day name]" />
@@ -1607,7 +1607,7 @@
                       refId="Package\DF - Load from stgDate to DimDate\OLE DB Command.Inputs[OLE DB Command Input].Columns[day name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="9"
+                      cachedLength="50"
                       cachedName="day name"
                       externalMetadataColumnId="Package\DF - Load from stgDate to DimDate\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
                       lineageId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].Columns[day name]" />
@@ -1958,7 +1958,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].ExternalColumns[day name]"
-                      length="9"
+                      length="50"
                       lineageId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].Columns[day name]"
                       name="day name"
                       truncationRowDisposition="FailComponent" />
@@ -1969,7 +1969,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].ExternalColumns[day abbrev]"
-                      length="3"
+                      length="50"
                       lineageId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].Columns[day abbrev]"
                       name="day abbrev"
                       truncationRowDisposition="FailComponent" />
@@ -2152,13 +2152,13 @@
                       refId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].ExternalColumns[day name]"
                       codePage="1252"
                       dataType="str"
-                      length="9"
+                      length="50"
                       name="day name" />
                     <externalMetadataColumn
                       refId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].ExternalColumns[day abbrev]"
                       codePage="1252"
                       dataType="str"
-                      length="3"
+                      length="50"
                       name="day abbrev" />
                     <externalMetadataColumn
                       refId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Output].ExternalColumns[weekday flag]"
@@ -2268,14 +2268,14 @@
                       refId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Error Output].Columns[day name]"
                       codePage="1252"
                       dataType="str"
-                      length="9"
+                      length="50"
                       lineageId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Error Output].Columns[day name]"
                       name="day name" />
                     <outputColumn
                       refId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Error Output].Columns[day abbrev]"
                       codePage="1252"
                       dataType="str"
-                      length="3"
+                      length="50"
                       lineageId="Package\DF - Load from stgDate to DimDate\SRC - Stage stgDate.Outputs[OLE DB Source Error Output].Columns[day abbrev]"
                       name="day abbrev" />
                     <outputColumn
@@ -2455,7 +2455,7 @@
         <NodeLayout
           Size="280,42"
           Id="Package\DF - Extract From Source to Stage stgDate"
-          TopLeft="182,118" />
+          TopLeft="144,116" />
         <NodeLayout
           Size="247,42"
           Id="Package\DF - Load from stgDate to DimDate"
@@ -2470,26 +2470,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="56,39.5"
+              EndConnector="18,37.5"
               Start="0,0"
-              End="56,32">
+              End="18,30">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.75" />
+                    End="0,14.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.75"
-                    Point2="0,19.75"
-                    Point3="4,19.75" />
+                    Point1="0,14.75"
+                    Point2="0,18.75"
+                    Point3="4,18.75" />
                   <mssgle:LineSegment
-                    End="52,19.75" />
+                    End="14,18.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="52,19.75"
-                    Point2="56,19.75"
-                    Point3="56,23.75" />
+                    Point1="14,18.75"
+                    Point2="18,18.75"
+                    Point3="18,22.75" />
                   <mssgle:LineSegment
-                    End="56,32" />
+                    End="18,30" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2500,30 +2500,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="322,160">
+          TopLeft="285.75,158">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-34.5,75"
+              EndConnector="0,77"
               Start="0,0"
-              End="-34.5,67.5">
+              End="0,69.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.5"
-                    Point2="0,37.5"
-                    Point3="-4,37.5" />
-                  <mssgle:LineSegment
-                    End="-30.5,37.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-30.5,37.5"
-                    Point2="-34.5,37.5"
-                    Point3="-34.5,41.5" />
-                  <mssgle:LineSegment
-                    End="-34.5,67.5" />
+                    End="0,69.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2539,7 +2527,7 @@
     design-time-name="Package\DF - Extract From Source to Stage stgDate">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="269,42"
           Id="Package\DF - Extract From Source to Stage stgDate\SRC - ExternalSourcesv_date_dimension"
@@ -2579,7 +2567,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2842,6 +2832,19 @@
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Load from stgDate to DimDate\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
