@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SalesDW"
   DTS:PackageType="5"
-  DTS:VersionBuild="53"
-  DTS:VersionGUID="{7A43FFF6-4182-402E-BBB3-674370B512D3}">
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{D6DE1EE7-82B2-4E2E-BF2D-8F161F5D419A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -393,7 +393,8 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts.Inputs[Slowly Changing Dimension Input].Columns[Description]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="Description"
                       externalMetadataColumnId="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts.Inputs[Slowly Changing Dimension Input].ExternalColumns[Description]"
                       lineageId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[Description]">
@@ -436,7 +437,8 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts.Inputs[Slowly Changing Dimension Input].ExternalColumns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       name="Description" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts.Inputs[Slowly Changing Dimension Input].ExternalColumns[IDColor]"
@@ -592,7 +594,8 @@
                       lineageId="Package\DF - Stage To DW DimColorProduct\Union All.Outputs[Union All Output 1].Columns[NameColor]" />
                     <inputColumn
                       refId="Package\DF - Stage To DW DimColorProduct\Insert Destination.Inputs[OLE DB Destination Input].Columns[Description]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="Description"
                       externalMetadataColumnId="Package\DF - Stage To DW DimColorProduct\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
                       lineageId="Package\DF - Stage To DW DimColorProduct\Union All.Outputs[Union All Output 1].Columns[Description]" />
@@ -620,7 +623,8 @@
                       name="NameColor" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage To DW DimColorProduct\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       name="Description" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage To DW DimColorProduct\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[RowIsCurrent]"
@@ -861,10 +865,11 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].ExternalColumns[Description]"
+                      length="200"
                       lineageId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[Description]"
                       name="Description"
                       truncationRowDisposition="FailComponent" />
@@ -882,7 +887,8 @@
                       name="NameColor" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].ExternalColumns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       name="Description" />
                   </externalMetadataColumns>
                 </output>
@@ -904,7 +910,8 @@
                       name="NameColor" />
                     <outputColumn
                       refId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Error Output].Columns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       lineageId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Error Output].Columns[Description]"
                       name="Description" />
                     <outputColumn
@@ -965,7 +972,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DF - Stage To DW DimColorProduct\Union All.Inputs[Union All Input 1].Columns[Description]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="Description"
                       lineageId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[Description]">
                       <properties>
@@ -1013,7 +1021,8 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\DF - Stage To DW DimColorProduct\Union All.Inputs[Union All Input 2].Columns[Description]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="Description"
                       lineageId="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[Description]">
                       <properties>
@@ -1053,7 +1062,8 @@
                       name="NameColor" />
                     <outputColumn
                       refId="Package\DF - Stage To DW DimColorProduct\Union All.Outputs[Union All Output 1].Columns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       lineageId="Package\DF - Stage To DW DimColorProduct\Union All.Outputs[Union All Output 1].Columns[Description]"
                       name="Description" />
                   </outputColumns>
@@ -6044,6 +6054,12 @@ where [refTable].[Date] = ?</property>
                       externalMetadataColumnId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZipCodeKey]"
                       lineageId="Package\DF - Stage To DW FactSales\Look up ZipCodeKey.Outputs[Lookup Match Output].Columns[ZipCodeKey]" />
                     <inputColumn
+                      refId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input].Columns[ColorProductKey]"
+                      cachedDataType="i4"
+                      cachedName="ColorProductKey"
+                      externalMetadataColumnId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[ColorProductKey]"
+                      lineageId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Match Output].Columns[ColorProductKey]" />
+                    <inputColumn
                       refId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input].Columns[Amount]"
                       cachedDataType="i4"
                       cachedName="Amount"
@@ -6094,6 +6110,10 @@ where [refTable].[Date] = ?</property>
                       refId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZipCodeKey]"
                       dataType="i4"
                       name="ZipCodeKey" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[ColorProductKey]"
+                      dataType="i4"
+                      name="ColorProductKey" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
                       dataType="i4"
@@ -6613,6 +6633,164 @@ where [refTable].[IDZipCode] = ?</property>
               </outputs>
             </component>
             <component
+              refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup ColorProductKey"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimColorProducts]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimColorProducts]) [refTable]
+where [refTable].[IDColor] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ColorProductKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IDColor" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NameColor" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Description" dataType="DT_WSTR" length="200" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowIsCurrent" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowStartDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowEndDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowChangeReason" dataType="DT_WSTR" length="200" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].Columns[IDColor]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Connections[OleDbConnection]"
+                  connectionManagerID="{7BF7B442-57AE-464E-838E-DFD92A7EE06B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoDW]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Inputs[Lookup Input].Columns[IDColor]"
+                      cachedDataType="i4"
+                      cachedName="IDColor"
+                      lineageId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].Columns[IDColor]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">IDColor</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Match Output].Columns[ColorProductKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Match Output].Columns[ColorProductKey]"
+                      name="ColorProductKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">ColorProductKey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\DF - Stage To DW FactSales\Lookup DateKey"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
@@ -6963,8 +7141,9 @@ where [refTable].[ProductTypeID] = ?</property>
       ,[Star]
       ,[ProducerID]
       ,[ProductTypeID]
-      ,[ProductID],
-       IDZipCode
+      ,[ProductID]
+       ,IDZipCode
+      ,IDColor
   FROM [ShopBanDoTheThaoStage].[dbo].[stgSales]</property>
                 <property
                   dataType="System.String"
@@ -7102,6 +7281,15 @@ where [refTable].[ProductTypeID] = ?</property>
                       lineageId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].Columns[IDZipCode]"
                       name="IDZipCode"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].Columns[IDColor]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].ExternalColumns[IDColor]"
+                      lineageId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].Columns[IDColor]"
+                      name="IDColor"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -7151,6 +7339,10 @@ where [refTable].[ProductTypeID] = ?</property>
                       refId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].ExternalColumns[IDZipCode]"
                       dataType="i4"
                       name="IDZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].ExternalColumns[IDColor]"
+                      dataType="i4"
+                      name="IDColor" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -7216,6 +7408,11 @@ where [refTable].[ProductTypeID] = ?</property>
                       lineageId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Error Output].Columns[IDZipCode]"
                       name="IDZipCode" />
                     <outputColumn
+                      refId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Error Output].Columns[IDColor]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Error Output].Columns[IDColor]"
+                      name="IDColor" />
+                    <outputColumn
                       refId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
@@ -7265,13 +7462,18 @@ where [refTable].[ProductTypeID] = ?</property>
               name="Lookup Match Output"
               startId="Package\DF - Stage To DW FactSales\Look up ZipCodeKey.Outputs[Lookup Match Output]" />
             <path
+              refId="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output5]"
+              endId="Package\DF - Stage To DW FactSales\Look up ZipCodeKey.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Outputs[Lookup Match Output]" />
+            <path
               refId="Package\DF - Stage To DW FactSales.Paths[New Output]"
               endId="Package\DF - Stage To DW FactSales\Insert Destination.Inputs[OLE DB Destination Input]"
               name="New Output"
               startId="Package\DF - Stage To DW FactSales\DST - ShopBanDoTheThaoDW - FactSales.Outputs[New Output]" />
             <path
               refId="Package\DF - Stage To DW FactSales.Paths[OLE DB Source Output]"
-              endId="Package\DF - Stage To DW FactSales\Look up ZipCodeKey.Inputs[Lookup Input]"
+              endId="Package\DF - Stage To DW FactSales\Lookup ColorProductKey.Inputs[Lookup Input]"
               name="OLE DB Source Output"
               startId="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output]" />
           </paths>
@@ -8674,40 +8876,335 @@ where [refTable].[ProductTypeID] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="225,43"
+          Size="247,42"
+          Id="Package\DF - Stage To DW DimColorProduct"
+          TopLeft="307,135" />
+        <NodeLayout
+          Size="247,43"
           Id="Package\DF - Stage To DW DimMember"
-          TopLeft="13,152" />
+          TopLeft="49,130" />
         <NodeLayout
           Size="228,42"
           Id="Package\DF - Stage To DW DimProducer"
-          TopLeft="492.75,63.75" />
+          TopLeft="560.75,63.75" />
         <NodeLayout
           Size="245,42"
           Id="Package\DF - Stage To DW DimProductType"
-          TopLeft="235.75,61.75" />
+          TopLeft="303.75,61.75" />
         <NodeLayout
           Size="224,42"
           Id="Package\DF - Stage To DW DimZipCode"
-          TopLeft="521,156" />
+          TopLeft="559,132" />
         <NodeLayout
           Size="233,42"
           Id="Package\DF - Stage To DW FactInventory"
-          TopLeft="344,260" />
+          TopLeft="306,217" />
         <NodeLayout
-          Size="212,42"
+          Size="237,42"
           Id="Package\DF - Stage To DW FactSales"
-          TopLeft="263,157" />
+          TopLeft="305,271" />
         <NodeLayout
-          Size="208,42"
+          Size="242,42"
           Id="Package\DF - Stage To DW Products"
-          TopLeft="8,63" />
-        <NodeLayout
-          Size="247,42"
-          Id="Package\DF - Stage To DW DimColorProduct"
-          TopLeft="26,225" />
+          TopLeft="53,64" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\DF - Stage To DW DimColorProduct">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="321,42"
+          Id="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts"
+          TopLeft="72,5.5" />
+        <NodeLayout
+          Size="316,42"
+          Id="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts"
+          TopLeft="74.5,107.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW DimColorProduct.Paths[OLE DB Source Output]"
+          TopLeft="232.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="154,42"
+          Id="Package\DF - Stage To DW DimColorProduct\Derived Column"
+          TopLeft="17.5,209.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW DimColorProduct.Paths[Historical Attribute Inserts Output]"
+          TopLeft="181.166666666667,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-86.6666666666667,60"
+              Start="0,0"
+              End="-86.6666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.1813602015113" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.1813602015113"
+                    Point2="0,24.1813602015113"
+                    Point3="-4,24.1813602015113" />
+                  <mssgle:LineSegment
+                    End="-82.6666666666667,24.1813602015113" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-82.6666666666667,24.1813602015113"
+                    Point2="-86.6666666666667,24.1813602015113"
+                    Point3="-86.6666666666667,28.1813602015113" />
+                  <mssgle:LineSegment
+                    End="-86.6666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-118.389720052083,29.1813602015113,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\DF - Stage To DW DimColorProduct\OLE DB Command"
+          TopLeft="5.50000000000003,311.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW DimColorProduct.Paths[Derived Column Output]"
+          TopLeft="91.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\DF - Stage To DW DimColorProduct\Union All"
+          TopLeft="172,413.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW DimColorProduct.Paths[New Output]"
+          TopLeft="283.833333333333,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-32.5,264"
+              Start="0,0"
+              End="-32.5,256.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,126.683712605472" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,126.683712605472"
+                    Point2="0,130.683712605472"
+                    Point3="-4,130.683712605472" />
+                  <mssgle:LineSegment
+                    End="-28.5,130.683712605472" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-28.5,130.683712605472"
+                    Point2="-32.5,130.683712605472"
+                    Point3="-32.5,134.683712605472" />
+                  <mssgle:LineSegment
+                    End="-32.5,256.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-43.34138671875,135.683712605472,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DF - Stage To DW DimColorProduct.Paths[OLE DB Command Output]"
+          TopLeft="88.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="125.166666666667,60"
+              Start="0,0"
+              End="125.166666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5301794453507"
+                    Point2="0,35.5301794453507"
+                    Point3="4,35.5301794453507" />
+                  <mssgle:LineSegment
+                    End="121.166666666667,35.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="121.166666666667,35.5301794453507"
+                    Point2="125.166666666667,35.5301794453507"
+                    Point3="125.166666666667,39.5301794453507" />
+                  <mssgle:LineSegment
+                    End="125.166666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\DF - Stage To DW DimColorProduct\Derived Column 1"
+          TopLeft="151,515.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW DimColorProduct.Paths[Union All Output 1]"
+          TopLeft="232.5,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\DF - Stage To DW DimColorProduct\Insert Destination"
+          TopLeft="151,617.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW DimColorProduct.Paths[Derived Column Output1]"
+          TopLeft="232.5,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionID&gt;{7BF7B442-57AE-464E-838E-DFD92A7EE06B}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[DimColorProducts]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[Description]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;Description&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[IDColor]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;IDColor&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[NameColor]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;NameColor&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn&gt;RowIsCurrent&lt;/CurrentIndicatorColumn&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent&gt;1&lt;/ValueCurrent&gt;
+  &lt;ValueExpired&gt;0&lt;/ValueExpired&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\DF - Stage To DW DimMember">
     <LayoutInfo>
@@ -10011,7 +10508,7 @@ where [refTable].[ProductTypeID] = ?</property>
         <NodeLayout
           Size="276,42"
           Id="Package\DF - Stage To DW FactSales\DST - ShopBanDoTheThaoDW - FactSales"
-          TopLeft="7.50000000000009,719.5" />
+          TopLeft="7.50000000000009,821.5" />
         <NodeLayout
           Size="280,42"
           Id="Package\DF - Stage To DW FactSales\SRC - ShopBanDoTheThaoStage - stgSales"
@@ -10019,77 +10516,29 @@ where [refTable].[ProductTypeID] = ?</property>
         <NodeLayout
           Size="179,42"
           Id="Package\DF - Stage To DW FactSales\Look up ProducerKey"
-          TopLeft="56.0000000000001,413.5" />
+          TopLeft="56.0000000000001,515.5" />
         <NodeLayout
           Size="175,42"
           Id="Package\DF - Stage To DW FactSales\Look up ZipCodeKey"
-          TopLeft="58,107.5" />
+          TopLeft="58,209.5" />
         <NodeLayout
           Size="192,42"
           Id="Package\DF - Stage To DW FactSales\Lookup ProductTypeKey"
-          TopLeft="49.5000000000001,515.5" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\DF - Stage To DW FactSales\Insert Destination"
-          TopLeft="64.0000000000001,821.5" />
+          TopLeft="49.5000000000001,617.5" />
         <NodeLayout
           Size="173,42"
           Id="Package\DF - Stage To DW FactSales\Look up ProductKey"
-          TopLeft="59.0000000000001,311.5" />
+          TopLeft="59.0000000000001,413.5" />
         <NodeLayout
           Size="156,42"
           Id="Package\DF - Stage To DW FactSales\Lookup DateKey"
-          TopLeft="67.5,209.5" />
+          TopLeft="67.5,311.5" />
         <NodeLayout
           Size="186,42"
           Id="Package\DF - Stage To DW FactSales\Caculating TotalMoney"
-          TopLeft="52.5000000000001,617.5" />
+          TopLeft="52.5000000000001,719.5" />
         <EdgeLayout
           Id="Package\DF - Stage To DW FactSales.Paths[Derived Column Output]"
-          TopLeft="145.5,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DF - Stage To DW FactSales.Paths[OLE DB Source Output]"
-          TopLeft="145.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DF - Stage To DW FactSales.Paths[New Output]"
           TopLeft="145.5,761.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10107,37 +10556,11 @@ where [refTable].[ProductTypeID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.09138671875,20.533203125,54.1827734375,11.43359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output4]"
-          TopLeft="145.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output3]"
           TopLeft="145.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10161,7 +10584,7 @@ where [refTable].[ProductTypeID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output2]"
+          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output3]"
           TopLeft="145.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10185,7 +10608,7 @@ where [refTable].[ProductTypeID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output1]"
+          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output2]"
           TopLeft="145.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10209,7 +10632,7 @@ where [refTable].[ProductTypeID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output]"
+          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output1]"
           TopLeft="145.5,557.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -10232,6 +10655,108 @@ where [refTable].[ProductTypeID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output]"
+          TopLeft="145.5,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="194,42"
+          Id="Package\DF - Stage To DW FactSales\Lookup ColorProductKey"
+          TopLeft="48.5,107.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW FactSales.Paths[OLE DB Source Output]"
+          TopLeft="145.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DF - Stage To DW FactSales.Paths[Lookup Match Output5]"
+          TopLeft="145.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\DF - Stage To DW FactSales\Insert Destination"
+          TopLeft="64.0000000000001,923.5" />
+        <EdgeLayout
+          Id="Package\DF - Stage To DW FactSales.Paths[New Output]"
+          TopLeft="145.5,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-27.09138671875,20.533203125,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -10251,6 +10776,12 @@ where [refTable].[ProductTypeID] = ?</property>
       &lt;ColumnName&gt;Amount&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;FixedAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Lookup ColorProductKey.Outputs[Lookup Match Output].Columns[ColorProductKey]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;ColorProductKey&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;SRC - ShopBanDoTheThaoStage - stgSales.Outputs[OLE DB Source Output].Columns[IDMember]&lt;/IdentificationString&gt;
@@ -10440,7 +10971,9 @@ where [refTable].[ProductTypeID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10462,7 +10995,9 @@ where [refTable].[ProductTypeID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10484,7 +11019,9 @@ where [refTable].[ProductTypeID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10506,7 +11043,9 @@ where [refTable].[ProductTypeID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10540,7 +11079,9 @@ where [refTable].[ProductTypeID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10634,7 +11175,9 @@ where [refTable].[ProductTypeID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10717,298 +11260,26 @@ where [refTable].[ProductTypeID] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\DF - Stage To DW DimColorProduct">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="321,42"
-          Id="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts"
-          TopLeft="72,5.5" />
-        <NodeLayout
-          Size="316,42"
-          Id="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts"
-          TopLeft="74.5,107.5" />
-        <EdgeLayout
-          Id="Package\DF - Stage To DW DimColorProduct.Paths[OLE DB Source Output]"
-          TopLeft="232.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\DF - Stage To DW DimColorProduct\Derived Column"
-          TopLeft="17.5,209.5" />
-        <EdgeLayout
-          Id="Package\DF - Stage To DW DimColorProduct.Paths[Historical Attribute Inserts Output]"
-          TopLeft="181.166666666667,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-86.6666666666667,60"
-              Start="0,0"
-              End="-86.6666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.1813602015113" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.1813602015113"
-                    Point2="0,24.1813602015113"
-                    Point3="-4,24.1813602015113" />
-                  <mssgle:LineSegment
-                    End="-82.6666666666667,24.1813602015113" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-82.6666666666667,24.1813602015113"
-                    Point2="-86.6666666666667,24.1813602015113"
-                    Point3="-86.6666666666667,28.1813602015113" />
-                  <mssgle:LineSegment
-                    End="-86.6666666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-118.389720052083,29.1813602015113,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\DF - Stage To DW DimColorProduct\OLE DB Command"
-          TopLeft="5.50000000000003,311.5" />
-        <EdgeLayout
-          Id="Package\DF - Stage To DW DimColorProduct.Paths[Derived Column Output]"
-          TopLeft="91.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\DF - Stage To DW DimColorProduct\Union All"
-          TopLeft="172,413.5" />
-        <EdgeLayout
-          Id="Package\DF - Stage To DW DimColorProduct.Paths[New Output]"
-          TopLeft="283.833333333333,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-32.5,264"
-              Start="0,0"
-              End="-32.5,256.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,126.683712605472" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,126.683712605472"
-                    Point2="0,130.683712605472"
-                    Point3="-4,130.683712605472" />
-                  <mssgle:LineSegment
-                    End="-28.5,130.683712605472" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-28.5,130.683712605472"
-                    Point2="-32.5,130.683712605472"
-                    Point3="-32.5,134.683712605472" />
-                  <mssgle:LineSegment
-                    End="-32.5,256.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-43.34138671875,135.683712605472,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DF - Stage To DW DimColorProduct.Paths[OLE DB Command Output]"
-          TopLeft="88.5,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="125.166666666667,60"
-              Start="0,0"
-              End="125.166666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5301794453507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5301794453507"
-                    Point2="0,35.5301794453507"
-                    Point3="4,35.5301794453507" />
-                  <mssgle:LineSegment
-                    End="121.166666666667,35.5301794453507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="121.166666666667,35.5301794453507"
-                    Point2="125.166666666667,35.5301794453507"
-                    Point3="125.166666666667,39.5301794453507" />
-                  <mssgle:LineSegment
-                    End="125.166666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\DF - Stage To DW DimColorProduct\Derived Column 1"
-          TopLeft="151,515.5" />
-        <EdgeLayout
-          Id="Package\DF - Stage To DW DimColorProduct.Paths[Union All Output 1]"
-          TopLeft="232.5,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\DF - Stage To DW DimColorProduct\Insert Destination"
-          TopLeft="151,617.5" />
-        <EdgeLayout
-          Id="Package\DF - Stage To DW DimColorProduct.Paths[Derived Column Output1]"
-          TopLeft="232.5,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DF - Stage To DW DimColorProduct\SRC - ShopBanDoTheThaoStage - stgColorProducts">
+    design-time-name="Package\DF - Stage To DW FactSales\Lookup ColorProductKey">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimColorProducts]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q2:string">Table</Value>
+          type="q4:int">0</Value>
       </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DF - Stage To DW DimColorProduct\DST - ShopBanDoTheThaoDW - DimColorProducts">
-    <Properties>
       <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionID&gt;{7BF7B442-57AE-464E-838E-DFD92A7EE06B}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[DimColorProducts]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[Description]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;Description&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[IDColor]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;IDColor&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;SRC - ShopBanDoTheThaoStage - stgColorProducts.Outputs[OLE DB Source Output].Columns[NameColor]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;NameColor&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn&gt;RowIsCurrent&lt;/CurrentIndicatorColumn&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent&gt;1&lt;/ValueCurrent&gt;
-  &lt;ValueExpired&gt;0&lt;/ValueExpired&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

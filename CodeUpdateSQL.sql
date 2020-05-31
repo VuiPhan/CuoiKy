@@ -124,6 +124,7 @@ CREATE TABLE FactSales (
 	-- dimensions
 ,  [CustomerKey]  int   NOT NULL
 ,  [ZipCodeKey] int NOT NULL
+,  [ColorProductKey] int NOT NULL
 	-- facts
 ,  [Amount]  int   NOT NULL
 ,  [Price]  decimal(25,4) NOT NULL
@@ -148,6 +149,8 @@ CREATE TABLE FactSales (
 
 , CONSTRAINT fkNorthwindFactSalesDateKey FOREIGN KEY (DateKey)
 	REFERENCES DimDate (DateKey)
+, CONSTRAINT fkNorthwindFactSalesColorProductsKey FOREIGN KEY (ColorProductKey)
+	REFERENCES dbo.DimColorProducts (ColorProductKey)
 ) 
 ;
 CREATE TABLE FactInventory (
@@ -166,7 +169,7 @@ CREATE TABLE DimColorProducts(
    -- Attributes
 ,  [IDColor]  INT    NOT NULL
 ,  [NameColor]  nvarchar(100)   NOT NULL
-,  [Description] nvarchar(MAX)
+,  [Description] nvarchar(200)
 	-- metadata
 ,  [RowIsCurrent]  bit  DEFAULT 1 NOT NULL
 ,  [RowStartDate]  datetime  DEFAULT '12/31/1899' NOT NULL

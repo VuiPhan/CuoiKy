@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_Sales"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{50271FE6-56E6-4F7D-BDEB-C5C74C1957FD}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{74544357-F00E-4C89-8AED-BC0036626729}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -350,7 +350,8 @@
                       lineageId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Output].Columns[NameColor]" />
                     <inputColumn
                       refId="Package\DF - Stage ColorProducts\DST - ShopBanDoTheThaoStage - stgColorProducts.Inputs[OLE DB Destination Input].Columns[Description]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="Description"
                       externalMetadataColumnId="Package\DF - Stage ColorProducts\DST - ShopBanDoTheThaoStage - stgColorProducts.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
                       lineageId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Output].Columns[Description]" />
@@ -368,7 +369,8 @@
                       name="NameColor" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage ColorProducts\DST - ShopBanDoTheThaoStage - stgColorProducts.Inputs[OLE DB Destination Input].ExternalColumns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       name="Description" />
                   </externalMetadataColumns>
                 </input>
@@ -480,10 +482,11 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Output].Columns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Output].ExternalColumns[Description]"
+                      length="200"
                       lineageId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Output].Columns[Description]"
                       name="Description"
                       truncationRowDisposition="FailComponent" />
@@ -501,7 +504,8 @@
                       name="NameColor" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Output].ExternalColumns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       name="Description" />
                   </externalMetadataColumns>
                 </output>
@@ -523,7 +527,8 @@
                       name="NameColor" />
                     <outputColumn
                       refId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Error Output].Columns[Description]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="200"
                       lineageId="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts.Outputs[OLE DB Source Error Output].Columns[Description]"
                       name="Description" />
                     <outputColumn
@@ -2463,6 +2468,12 @@ FROM            ProductType</property>
                       cachedName="IDZipCode"
                       externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDZipCode]"
                       lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDZipCode]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].Columns[IDColor]"
+                      cachedDataType="i4"
+                      cachedName="IDColor"
+                      externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDColor]"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDColor]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4172,6 +4183,10 @@ FROM            DetailOrder INNER JOIN
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="197,42"
+          Id="Package\DF - Stage ColorProducts"
+          TopLeft="281,364" />
+        <NodeLayout
           Size="215,42"
           Id="Package\DF - Stage InventoryAnalysis"
           TopLeft="539,282" />
@@ -4505,18 +4520,90 @@ FROM            DetailOrder INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="197,42"
-          Id="Package\DF - Stage ColorProducts"
-          TopLeft="326,378" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DF - Stage InventoryAnalysis">
+    design-time-name="Package\DF - Stage ColorProducts">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="328,42"
+          Id="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts"
+          TopLeft="164,65" />
+        <NodeLayout
+          Size="321,42"
+          Id="Package\DF - Stage ColorProducts\DST - ShopBanDoTheThaoStage - stgColorProducts"
+          TopLeft="195,172" />
+        <EdgeLayout
+          Id="Package\DF - Stage ColorProducts.Paths[OLE DB Source Output]"
+          TopLeft="328,107">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.5,65"
+              Start="0,0"
+              End="27.5,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.5"
+                    Point2="0,32.5"
+                    Point3="4,32.5" />
+                  <mssgle:LineSegment
+                    End="23.5,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.5,32.5"
+                    Point2="27.5,32.5"
+                    Point3="27.5,36.5" />
+                  <mssgle:LineSegment
+                    End="27.5,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage ColorProducts\DST - ShopBanDoTheThaoStage - stgColorProducts">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\DF - Stage InventoryAnalysis">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="312,42"
           Id="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory"
@@ -4544,7 +4631,9 @@ FROM            DetailOrder INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4707,7 +4796,7 @@ FROM            DetailOrder INNER JOIN
     design-time-name="Package\DF - Stage Products">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="297,42"
           Id="Package\DF - Stage Products\DST - ShopBanDoTheThaoStage - stgProducts"
@@ -4735,7 +4824,9 @@ FROM            DetailOrder INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4844,15 +4935,15 @@ FROM            DetailOrder INNER JOIN
     design-time-name="Package\DF - Stage Sales">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="288,42"
-          Id="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales"
-          TopLeft="116.5,72.5" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="305,42"
           Id="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales"
           TopLeft="104,185" />
+        <NodeLayout
+          Size="288,42"
+          Id="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales"
+          TopLeft="116.5,72.5" />
         <EdgeLayout
           Id="Package\DF - Stage Sales.Paths[OLE DB Source Output]"
           TopLeft="258.5,114.5">
@@ -4872,7 +4963,9 @@ FROM            DetailOrder INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5110,82 +5203,6 @@ FROM            DetailOrder INNER JOIN
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\DF - Stage ZipCode\SRC - ShopBanDoTheThaoNorthwind - ZipCode">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\DF - Stage ColorProducts">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="328,42"
-          Id="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts"
-          TopLeft="164,65" />
-        <NodeLayout
-          Size="321,42"
-          Id="Package\DF - Stage ColorProducts\DST - ShopBanDoTheThaoStage - stgColorProducts"
-          TopLeft="195,172" />
-        <EdgeLayout
-          Id="Package\DF - Stage ColorProducts.Paths[OLE DB Source Output]"
-          TopLeft="328,107">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="27.5,65"
-              Start="0,0"
-              End="27.5,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.5"
-                    Point2="0,32.5"
-                    Point3="4,32.5" />
-                  <mssgle:LineSegment
-                    End="23.5,32.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="23.5,32.5"
-                    Point2="27.5,32.5"
-                    Point3="27.5,36.5" />
-                  <mssgle:LineSegment
-                    End="27.5,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DF - Stage ColorProducts\DST - ShopBanDoTheThaoStage - stgColorProducts">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
