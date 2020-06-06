@@ -42,6 +42,22 @@ CREATE  TABLE  DimZipCode
 	-- keys
 	CONSTRAINT  pkNorthwindDimZipCodeKey primary key (ZipCodeKey),	
 );
+CREATE  TABLE  DimStore
+(
+	StoreKey int identity not null,
+	-- attributes
+	IDStore int not null, 
+	AddressStore nvarchar(300)  null,
+	NameStore NVARCHAR(100),
+	-- metadata
+	RowIsCurrent bit default(1) not null,
+	RowStartDate datetime default('1/1/1900') not null,
+	RowEndDate datetime default('12/31/9999') not null,
+	RowChangeReason nvarchar(200) default ('N/A') not null,
+	-- keys
+	CONSTRAINT  pkNorthwindDimStoreKey primary key (StoreKey),	
+	-- thieu add cai khoa ngoai vao bang fact sale
+);
 CREATE TABLE [DimDate](
 	[DateKey] [int] NOT NULL,
 	[Date] [datetime] NULL,
@@ -57,7 +73,35 @@ CREATE TABLE [DimDate](
 	[IsAWeekday] varchar(1) NOT NULL DEFAULT (('N')),
 	constraint pkNorthwindDimDate PRIMARY KEY ([DateKey])
 )
+CREATE TABLE FactTransporters (
+   [IDOrder]  int   NOT NULL
+,  [ShipperKey]  int   NOT NULL
+,  [DateKey]  int   NOT NULL
+,  [ZipCodeKey]  int   NOT NULL
+,  [OrderedDateKey]  DATETIME   NOT NULL
+,  [ConfirmDateKey]  DATETIME   NOT NULL
+,  [DeliveryDateKey]  DATETIME   NOT NULL
+,  [DeliveredDateKey]  DATETIME   NOT NULL
+	-- dimensions
+,  [ThoiGianXacNhan]  int   NOT NULL
+,  [ThoiGianShipperNhanHang] int NOT NULL
+,  [ThoiGianGiaoHang] int NOT NULL
+	-- facts
+,  [TongThoiGianHoanThanh]  int   NOT NULL
+   --keys
+, CONSTRAINT pkNorthwindFactTransporters PRIMARY KEY ( [IDOrder], [ShipperKey],[ZipCodeKey],[OrderedDateKey])
 
+, CONSTRAINT fkNorthwindFactTransportersShipperKey2 FOREIGN KEY ( ShipperKey )
+	REFERENCES DimShipper(ShipperKey)
+
+, CONSTRAINT fkNorthwindFactTransportersZipCodeKey FOREIGN KEY ( ZipCodeKey )
+	REFERENCES dbo.DimZipCode (ZipCodeKey)
+
+, CONSTRAINT fkNorthwindFactTransportersDateKey FOREIGN KEY ( DateKey )
+	REFERENCES dbo.DimDate (DateKey)
+
+) 
+;
 
 
 -- code để load vào stage Products
@@ -115,6 +159,21 @@ CREATE TABLE DimMembers (
 ,  [RowChangeReason]  nvarchar(200)   NULL
 , CONSTRAINT pkNorthwindDimMembers PRIMARY KEY ( [MemberKey] )
 );
+CREATE TABLE DimShipper (
+   [ShipperKey]  int IDENTITY  NOT NULL
+   -- Attributes
+,  [IDShipper]  INT    NOT NULL
+,  [NameShipper]  nvarchar(100)   NOT NULL
+,  [PhoneNumber] nchar(10)
+,  [Address] nvarchar(300)
+,  [Infomation] nvarchar(200)
+	-- metadata
+,  [RowIsCurrent]  bit  DEFAULT 1 NOT NULL
+,  [RowStartDate]  datetime  DEFAULT '12/31/1899' NOT NULL
+,  [RowEndDate]  datetime  DEFAULT '12/31/9999' NOT NULL
+,  [RowChangeReason]  nvarchar(200)   NULL
+, CONSTRAINT pkNorthwindDimShipper PRIMARY KEY ( [ShipperKey] )
+);
 CREATE TABLE FactSales (
    [DateKey]  int   NOT NULL
 ,  [ProductKey]  int   NOT NULL
@@ -156,7 +215,9 @@ CREATE TABLE FactSales (
 CREATE TABLE FactInventory (
    [DateKey]  int   NOT NULL
 ,  [TotalQuantitySoldInDay]  int   NOT NULL
-,  [TotalMoneySoldInDay]  DECIMAL(12,1)   NOT NULL
+,  [TotalMoneySoldInDay] int   NOT NULL
+,  [TotalQuantityImportInDay]  int   NOT NULL
+,  [TotalMoneyImportInDay]  int   NOT NULL
    --keys
 , CONSTRAINT pkNorthwindFactInventory PRIMARY KEY ( [DateKey] )
 
@@ -436,6 +497,9 @@ VALUES  ( 8 , -- IDMember - int
 -- DW
 UPDATE dbo.stgSales
 SET DeliveryDate='2019-05-03 00:00:00.000'
+
+ALTER TABLE FactSales
+ADD FOREIGN KEY(StoreKey) REFERENCES DimStore(StoreKey)
 --end VP 6-5-2020
 
 

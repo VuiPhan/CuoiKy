@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Stage_Sales"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{74544357-F00E-4C89-8AED-BC0036626729}">
+  DTS:VersionBuild="59"
+  DTS:VersionGUID="{2BB7F080-37A5-4D99-96B6-3B7A767F2008}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -51,6 +51,26 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{C820F2D6-9306-4B5A-AC62-6CFF966F3D9C}"
       DTS:ObjectName="VUIPHAN.ShopBanDoTheThaoNorthwind 12">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VUIPHAN;Initial Catalog=ShopBanDoTheThaoNorthwind;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoNorthwind 13]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8ED2D8F7-1DBC-48A2-A2E8-208C4478C5D7}"
+      DTS:ObjectName="VUIPHAN.ShopBanDoTheThaoNorthwind 13">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VUIPHAN;Initial Catalog=ShopBanDoTheThaoNorthwind;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoNorthwind 14]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{001C3B77-AC49-4613-8BF7-19EA3800BFC4}"
+      DTS:ObjectName="VUIPHAN.ShopBanDoTheThaoNorthwind 14">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=VUIPHAN;Initial Catalog=ShopBanDoTheThaoNorthwind;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
@@ -161,6 +181,26 @@
       DTS:CreationName="OLEDB"
       DTS:DTSID="{F3BDE6FB-3194-4E36-B5E2-F8E8B151C10D}"
       DTS:ObjectName="VUIPHAN.ShopBanDoTheThaoStage 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VUIPHAN;Initial Catalog=ShopBanDoTheThaoStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoStage 12]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{59C58F33-83FC-4349-8D53-2B842DBFC88B}"
+      DTS:ObjectName="VUIPHAN.ShopBanDoTheThaoStage 12">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VUIPHAN;Initial Catalog=ShopBanDoTheThaoStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoStage 13]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{79EDD9B5-42A3-4662-AC22-13495EF79734}"
+      DTS:ObjectName="VUIPHAN.ShopBanDoTheThaoStage 13">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=VUIPHAN;Initial Catalog=ShopBanDoTheThaoStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
@@ -663,6 +703,18 @@
                       cachedName="TongTienBanDuocTrongNgay"
                       externalMetadataColumnId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].ExternalColumns[TongTienBanDuocTrongNgay]"
                       lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongTienBanDuocTrongNgay]" />
+                    <inputColumn
+                      refId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].Columns[TongSLHangNhapVeTrongNgay]"
+                      cachedDataType="i4"
+                      cachedName="TongSLHangNhapVeTrongNgay"
+                      externalMetadataColumnId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].ExternalColumns[TongSLHangNhapVeTrongNgay]"
+                      lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongSLHangNhapVeTrongNgay]" />
+                    <inputColumn
+                      refId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].Columns[TongTienNhapHangVeTrongNgay]"
+                      cachedDataType="i4"
+                      cachedName="TongTienNhapHangVeTrongNgay"
+                      externalMetadataColumnId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].ExternalColumns[TongTienNhapHangVeTrongNgay]"
+                      lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongTienNhapHangVeTrongNgay]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -676,9 +728,16 @@
                       name="TongSLBanTrongNgay" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].ExternalColumns[TongTienBanDuocTrongNgay]"
-                      dataType="numeric"
-                      name="TongTienBanDuocTrongNgay"
-                      precision="18" />
+                      dataType="i4"
+                      name="TongTienBanDuocTrongNgay" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].ExternalColumns[TongSLHangNhapVeTrongNgay]"
+                      dataType="i4"
+                      name="TongSLHangNhapVeTrongNgay" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage InventoryAnalysis\DST - ShopBanDoTheThaoStage - stgInventory.Inputs[OLE DB Destination Input].ExternalColumns[TongTienNhapHangVeTrongNgay]"
+                      dataType="i4"
+                      name="TongTienNhapHangVeTrongNgay" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -733,7 +792,9 @@
                   description="The SQL command to be executed."
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT T.[full date],dbo.TotalQuantitySoldInDay(T.[full date]) AS TongSLBanTrongNgay,
-		dbo.TotalMoneySoldInDay(T.[full date]) AS TongTienBanDuocTrongNgay
+		dbo.TotalMoneySoldInDay(T.[full date]) AS TongTienBanDuocTrongNgay,
+		dbo.TotalAmountImportBill(T.[full date]) AS TongSLHangNhapVeTrongNgay,
+		dbo.TotalMoneyImportBill(T.[full date]) AS TongTienNhapHangVeTrongNgay
  FROM stgDate AS T</property>
                 <property
                   dataType="System.String"
@@ -797,6 +858,24 @@
                       lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongTienBanDuocTrongNgay]"
                       name="TongTienBanDuocTrongNgay"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongSLHangNhapVeTrongNgay]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].ExternalColumns[TongSLHangNhapVeTrongNgay]"
+                      lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongSLHangNhapVeTrongNgay]"
+                      name="TongSLHangNhapVeTrongNgay"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongTienNhapHangVeTrongNgay]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].ExternalColumns[TongTienNhapHangVeTrongNgay]"
+                      lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].Columns[TongTienNhapHangVeTrongNgay]"
+                      name="TongTienNhapHangVeTrongNgay"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -812,6 +891,14 @@
                       refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].ExternalColumns[TongTienBanDuocTrongNgay]"
                       dataType="i4"
                       name="TongTienBanDuocTrongNgay" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].ExternalColumns[TongSLHangNhapVeTrongNgay]"
+                      dataType="i4"
+                      name="TongSLHangNhapVeTrongNgay" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Output].ExternalColumns[TongTienNhapHangVeTrongNgay]"
+                      dataType="i4"
+                      name="TongTienNhapHangVeTrongNgay" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -834,6 +921,16 @@
                       dataType="i4"
                       lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Error Output].Columns[TongTienBanDuocTrongNgay]"
                       name="TongTienBanDuocTrongNgay" />
+                    <outputColumn
+                      refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Error Output].Columns[TongSLHangNhapVeTrongNgay]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Error Output].Columns[TongSLHangNhapVeTrongNgay]"
+                      name="TongSLHangNhapVeTrongNgay" />
+                    <outputColumn
+                      refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Error Output].Columns[TongTienNhapHangVeTrongNgay]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Error Output].Columns[TongTienNhapHangVeTrongNgay]"
+                      name="TongTienNhapHangVeTrongNgay" />
                     <outputColumn
                       refId="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -2407,12 +2504,6 @@ FROM            ProductType</property>
                       externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDOrder]"
                       lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDOrder]" />
                     <inputColumn
-                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].Columns[DeliveryDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="DeliveryDate"
-                      externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[DeliveryDate]"
-                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[DeliveryDate]" />
-                    <inputColumn
                       refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].Columns[Amount]"
                       cachedDataType="i4"
                       cachedName="Amount"
@@ -2474,6 +2565,24 @@ FROM            ProductType</property>
                       cachedName="IDColor"
                       externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDColor]"
                       lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDColor]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].Columns[IDStore]"
+                      cachedDataType="i4"
+                      cachedName="IDStore"
+                      externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDStore]"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDStore]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].Columns[ShopOrOnline]"
+                      cachedDataType="bool"
+                      cachedName="ShopOrOnline"
+                      externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[ShopOrOnline]"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[ShopOrOnline]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].Columns[DeliveredDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DeliveredDate"
+                      externalMetadataColumnId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDate]"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[DeliveredDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2481,10 +2590,6 @@ FROM            ProductType</property>
                       refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDOrder]"
                       dataType="i4"
                       name="IDOrder" />
-                    <externalMetadataColumn
-                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[DeliveryDate]"
-                      dataType="dbTimeStamp"
-                      name="DeliveryDate" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
                       dataType="i4"
@@ -2527,6 +2632,18 @@ FROM            ProductType</property>
                       refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDColor]"
                       dataType="i4"
                       name="IDColor" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[IDStore]"
+                      dataType="i4"
+                      name="IDStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[ShopOrOnline]"
+                      dataType="bool"
+                      name="ShopOrOnline" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveredDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2580,7 +2697,7 @@ FROM            ProductType</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        [Order].IDOrder, [Order].DeliveryDate, DetailOrder.Amount, DetailOrder.Price, [Order].IDMember, Review.Message, Review.Star, Producer.ProducerID, ProductType.ProductTypeID, Product.ProductID,IDZipCode,ColorProduct.IDColor
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT        [Order].IDOrder, [Order].DeliveredDate, DetailOrder.Amount, DetailOrder.Price, [Order].IDMember, Review.Message, Review.Star, Producer.ProducerID, ProductType.ProductTypeID, Product.ProductID,IDZipCode,ColorProduct.IDColor,IDStore,ShopOrOnline
 FROM            DetailOrder INNER JOIN
                          [Order] ON DetailOrder.IDOrder = [Order].IDOrder INNER JOIN
                          Product ON DetailOrder.IDProduct = Product.ProductID INNER JOIN
@@ -2631,15 +2748,6 @@ FROM            DetailOrder INNER JOIN
                       externalMetadataColumnId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[IDOrder]"
                       lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDOrder]"
                       name="IDOrder"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[DeliveryDate]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[DeliveryDate]"
-                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[DeliveryDate]"
-                      name="DeliveryDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[Amount]"
@@ -2733,6 +2841,33 @@ FROM            DetailOrder INNER JOIN
                       lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDColor]"
                       name="IDColor"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDStore]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[IDStore]"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[IDStore]"
+                      name="IDStore"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[ShopOrOnline]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[ShopOrOnline]"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[ShopOrOnline]"
+                      name="ShopOrOnline"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[DeliveredDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[DeliveredDate]"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].Columns[DeliveredDate]"
+                      name="DeliveredDate"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2740,10 +2875,6 @@ FROM            DetailOrder INNER JOIN
                       refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[IDOrder]"
                       dataType="i4"
                       name="IDOrder" />
-                    <externalMetadataColumn
-                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[DeliveryDate]"
-                      dataType="dbTimeStamp"
-                      name="DeliveryDate" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[Amount]"
                       dataType="i4"
@@ -2786,6 +2917,18 @@ FROM            DetailOrder INNER JOIN
                       refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[IDColor]"
                       dataType="i4"
                       name="IDColor" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[IDStore]"
+                      dataType="i4"
+                      name="IDStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[ShopOrOnline]"
+                      dataType="bool"
+                      name="ShopOrOnline" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Output].ExternalColumns[DeliveredDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveredDate" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2799,10 +2942,10 @@ FROM            DetailOrder INNER JOIN
                       lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[IDOrder]"
                       name="IDOrder" />
                     <outputColumn
-                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[DeliveryDate]"
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[DeliveredDate]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[DeliveryDate]"
-                      name="DeliveryDate" />
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[DeliveredDate]"
+                      name="DeliveredDate" />
                     <outputColumn
                       refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[Amount]"
                       dataType="i4"
@@ -2855,6 +2998,16 @@ FROM            DetailOrder INNER JOIN
                       dataType="i4"
                       lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[IDColor]"
                       name="IDColor" />
+                    <outputColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[IDStore]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[IDStore]"
+                      name="IDStore" />
+                    <outputColumn
+                      refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[ShopOrOnline]"
+                      dataType="bool"
+                      lineageId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[ShopOrOnline]"
+                      name="ShopOrOnline" />
                     <outputColumn
                       refId="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -2991,7 +3144,8 @@ FROM            DetailOrder INNER JOIN
                       lineageId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output].Columns[PhoneNumber]" />
                     <inputColumn
                       refId="Package\DF - Stage Shippers\DST - ShopBanDoTheThaoStage - stgShippers.Inputs[OLE DB Destination Input].Columns[Address]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="300"
                       cachedName="Address"
                       externalMetadataColumnId="Package\DF - Stage Shippers\DST - ShopBanDoTheThaoStage - stgShippers.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
                       lineageId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output].Columns[Address]" />
@@ -3022,7 +3176,7 @@ FROM            DetailOrder INNER JOIN
                     <externalMetadataColumn
                       refId="Package\DF - Stage Shippers\DST - ShopBanDoTheThaoStage - stgShippers.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
                       dataType="wstr"
-                      length="50"
+                      length="300"
                       name="Address" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage Shippers\DST - ShopBanDoTheThaoStage - stgShippers.Inputs[OLE DB Destination Input].ExternalColumns[Infomation]"
@@ -3149,10 +3303,11 @@ FROM            DetailOrder INNER JOIN
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output].Columns[Address]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      length="300"
                       lineageId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output].Columns[Address]"
                       name="Address"
                       truncationRowDisposition="FailComponent" />
@@ -3185,7 +3340,8 @@ FROM            DetailOrder INNER JOIN
                       name="PhoneNumber" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output].ExternalColumns[Address]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="300"
                       name="Address" />
                     <externalMetadataColumn
                       refId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output].ExternalColumns[Infomation]"
@@ -3218,7 +3374,8 @@ FROM            DetailOrder INNER JOIN
                       name="PhoneNumber" />
                     <outputColumn
                       refId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Error Output].Columns[Address]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="300"
                       lineageId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Error Output].Columns[Address]"
                       name="Address" />
                     <outputColumn
@@ -3251,6 +3408,344 @@ FROM            DetailOrder INNER JOIN
               endId="Package\DF - Stage Shippers\DST - ShopBanDoTheThaoStage - stgShippers.Inputs[OLE DB Destination Input]"
               name="OLE DB Source Output"
               startId="Package\DF - Stage Shippers\SRC - ShopBanDoTheThaoNorthwind - Shippers.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DF - Stage Stores"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{719C6AB6-3C23-4AEC-B597-FC4E3C2AF25A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DF - Stage Stores"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DST - ShopBanDoTheThaoStage - stgStores"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[stgStores]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoStage 12]"
+                  connectionManagerRefId="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoStage 12]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].Columns[IDStore]"
+                      cachedDataType="i4"
+                      cachedName="IDStore"
+                      externalMetadataColumnId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[IDStore]"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[IDStore]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].Columns[NameStore]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="NameStore"
+                      externalMetadataColumnId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[NameStore]"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[NameStore]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].Columns[IDZipCodeStore]"
+                      cachedDataType="i4"
+                      cachedName="IDZipCodeStore"
+                      externalMetadataColumnId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[IDZipCodeStore]"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[IDZipCodeStore]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].Columns[AddressStore]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="AddressStore"
+                      externalMetadataColumnId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[AddressStore]"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[AddressStore]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[IDStore]"
+                      dataType="i4"
+                      name="IDStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[NameStore]"
+                      dataType="wstr"
+                      length="100"
+                      name="NameStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[IDZipCodeStore]"
+                      dataType="i4"
+                      name="IDZipCodeStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input].ExternalColumns[AddressStore]"
+                      dataType="wstr"
+                      length="300"
+                      name="AddressStore" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="SRC  - ShopBanDoTheThaoNorthwind - Store"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Store]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoNorthwind 13]"
+                  connectionManagerRefId="Package.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoNorthwind 13]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[IDStore]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[IDStore]"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[IDStore]"
+                      name="IDStore"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[NameStore]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[NameStore]"
+                      length="100"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[NameStore]"
+                      name="NameStore"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[IDZipCodeStore]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[IDZipCodeStore]"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[IDZipCodeStore]"
+                      name="IDZipCodeStore"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[AddressStore]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[AddressStore]"
+                      length="300"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].Columns[AddressStore]"
+                      name="AddressStore"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[IDStore]"
+                      dataType="i4"
+                      name="IDStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[NameStore]"
+                      dataType="wstr"
+                      length="100"
+                      name="NameStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[IDZipCodeStore]"
+                      dataType="i4"
+                      name="IDZipCodeStore" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output].ExternalColumns[AddressStore]"
+                      dataType="wstr"
+                      length="300"
+                      name="AddressStore" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[IDStore]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[IDStore]"
+                      name="IDStore" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[NameStore]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[NameStore]"
+                      name="NameStore" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[IDZipCodeStore]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[IDZipCodeStore]"
+                      name="IDZipCodeStore" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[AddressStore]"
+                      dataType="wstr"
+                      length="300"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[AddressStore]"
+                      name="AddressStore" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DF - Stage Stores.Paths[OLE DB Source Output]"
+              endId="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -3665,6 +4160,571 @@ FROM            DetailOrder INNER JOIN
               endId="Package\DF - Stage Suppliers\DST - ShopBanDoTheThaoStage - stgSupplier.Inputs[OLE DB Destination Input]"
               name="OLE DB Source Output"
               startId="Package\DF - Stage Suppliers\SRC - ShopBanDoTheThaoNorthwind - Supplier.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DF - Stage Transporters"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{DA7D8E17-BF8B-43FD-AD12-96BEE95BC7A6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DF - Stage Transporters"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DST - ShopBanDoTheThaoStage - stgTransporter"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[stgTransporter]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Connections[OleDbConnection]"
+                  connectionManagerID="{9BC19FBD-356A-46C4-862F-7F40AC209582}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[IDOrder]"
+                      cachedDataType="i4"
+                      cachedName="IDOrder"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[IDOrder]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDOrder]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[IDShipper]"
+                      cachedDataType="i4"
+                      cachedName="IDShipper"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[IDShipper]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDShipper]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[IDZipCode]"
+                      cachedDataType="i4"
+                      cachedName="IDZipCode"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[IDZipCode]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDZipCode]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[OrderedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="OrderedDate"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[OrderedDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[OrderedDate]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[ConfirmDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ConfirmDate"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ConfirmDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ConfirmDate]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[DeliveryDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DeliveryDate"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[DeliveryDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveryDate]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[DeliveredDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DeliveredDate"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveredDate]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[ThoiGianXacNhan]"
+                      cachedDataType="i4"
+                      cachedName="ThoiGianXacNhan"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ThoiGianXacNhan]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianXacNhan]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[ThoiGianShipperNhanHang]"
+                      cachedDataType="i4"
+                      cachedName="ThoiGianShipperNhanHang"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ThoiGianShipperNhanHang]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianShipperNhanHang]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[ThoiGianGiaoHang]"
+                      cachedDataType="i4"
+                      cachedName="ThoiGianGiaoHang"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ThoiGianGiaoHang]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianGiaoHang]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[TongThoiGianHoanThanh]"
+                      cachedDataType="i4"
+                      cachedName="TongThoiGianHoanThanh"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[TongThoiGianHoanThanh]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[TongThoiGianHoanThanh]" />
+                    <inputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].Columns[DeliveredDateDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DeliveredDateDate"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDateDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveredDateDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[IDOrder]"
+                      dataType="i4"
+                      name="IDOrder" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[IDShipper]"
+                      dataType="i4"
+                      name="IDShipper" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[IDZipCode]"
+                      dataType="i4"
+                      name="IDZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[OrderedDate]"
+                      dataType="dbTimeStamp"
+                      name="OrderedDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ConfirmDate]"
+                      dataType="dbTimeStamp"
+                      name="ConfirmDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[DeliveryDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveryDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveredDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ThoiGianXacNhan]"
+                      dataType="i4"
+                      name="ThoiGianXacNhan" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ThoiGianShipperNhanHang]"
+                      dataType="i4"
+                      name="ThoiGianShipperNhanHang" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[ThoiGianGiaoHang]"
+                      dataType="i4"
+                      name="ThoiGianGiaoHang" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[TongThoiGianHoanThanh]"
+                      dataType="i4"
+                      name="TongThoiGianHoanThanh" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDateDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveredDateDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="SRC - ShopBanDoTheThaoNorthwind - Order"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
+	   IDOrder,
+	   CONVERT(DATETIME, LEFT(CONVERT(VARCHAR,DeliveredDate,23),10), 111) as DeliveredDateDate,
+	   IDShipper,
+	   IDZipCode,
+	   OrderedDate,
+	   ConfirmDate,
+	   DeliveryDate,
+	   DeliveredDate,
+	   ISNULL(DATEDIFF(HOUR,OrderedDate,ConfirmDate),0) AS ThoiGianXacNhan, 
+	   ISNULL(DATEDIFF(HOUR,ConfirmDate,DeliveryDate),0) AS ThoiGianShipperNhanHang, 
+	   ISNULL(DATEDIFF(HOUR,DeliveryDate,DeliveredDate),0) AS ThoiGianGiaoHang,
+	   ISNULL(DATEDIFF(HOUR,OrderedDate,DeliveredDate),0) AS TongThoiGianHoanThanh
+FROM dbo.[Order]</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Connections[OleDbConnection]"
+                  connectionManagerID="{5E303215-524E-4E0C-9CF9-FEB4F6C02B7B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[VUIPHAN.ShopBanDoTheThaoNorthwind]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDOrder]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[IDOrder]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDOrder]"
+                      name="IDOrder"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDShipper]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[IDShipper]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDShipper]"
+                      name="IDShipper"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDZipCode]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[IDZipCode]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[IDZipCode]"
+                      name="IDZipCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[OrderedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[OrderedDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[OrderedDate]"
+                      name="OrderedDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ConfirmDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ConfirmDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ConfirmDate]"
+                      name="ConfirmDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveryDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[DeliveryDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveryDate]"
+                      name="DeliveryDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveredDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[DeliveredDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveredDate]"
+                      name="DeliveredDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianXacNhan]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ThoiGianXacNhan]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianXacNhan]"
+                      name="ThoiGianXacNhan"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianShipperNhanHang]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ThoiGianShipperNhanHang]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianShipperNhanHang]"
+                      name="ThoiGianShipperNhanHang"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianGiaoHang]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ThoiGianGiaoHang]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[ThoiGianGiaoHang]"
+                      name="ThoiGianGiaoHang"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[TongThoiGianHoanThanh]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[TongThoiGianHoanThanh]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[TongThoiGianHoanThanh]"
+                      name="TongThoiGianHoanThanh"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveredDateDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[DeliveredDateDate]"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].Columns[DeliveredDateDate]"
+                      name="DeliveredDateDate"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[IDOrder]"
+                      dataType="i4"
+                      name="IDOrder" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[IDShipper]"
+                      dataType="i4"
+                      name="IDShipper" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[IDZipCode]"
+                      dataType="i4"
+                      name="IDZipCode" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[OrderedDate]"
+                      dataType="dbTimeStamp"
+                      name="OrderedDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ConfirmDate]"
+                      dataType="dbTimeStamp"
+                      name="ConfirmDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[DeliveryDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveryDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[DeliveredDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveredDate" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ThoiGianXacNhan]"
+                      dataType="i4"
+                      name="ThoiGianXacNhan" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ThoiGianShipperNhanHang]"
+                      dataType="i4"
+                      name="ThoiGianShipperNhanHang" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[ThoiGianGiaoHang]"
+                      dataType="i4"
+                      name="ThoiGianGiaoHang" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[TongThoiGianHoanThanh]"
+                      dataType="i4"
+                      name="TongThoiGianHoanThanh" />
+                    <externalMetadataColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output].ExternalColumns[DeliveredDateDate]"
+                      dataType="dbTimeStamp"
+                      name="DeliveredDateDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[IDOrder]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[IDOrder]"
+                      name="IDOrder" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[DeliveredDateDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[DeliveredDateDate]"
+                      name="DeliveredDateDate" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[IDShipper]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[IDShipper]"
+                      name="IDShipper" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[IDZipCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[IDZipCode]"
+                      name="IDZipCode" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[OrderedDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[OrderedDate]"
+                      name="OrderedDate" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ConfirmDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ConfirmDate]"
+                      name="ConfirmDate" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[DeliveryDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[DeliveryDate]"
+                      name="DeliveryDate" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[DeliveredDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[DeliveredDate]"
+                      name="DeliveredDate" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ThoiGianXacNhan]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ThoiGianXacNhan]"
+                      name="ThoiGianXacNhan" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ThoiGianShipperNhanHang]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ThoiGianShipperNhanHang]"
+                      name="ThoiGianShipperNhanHang" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ThoiGianGiaoHang]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ThoiGianGiaoHang]"
+                      name="ThoiGianGiaoHang" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[TongThoiGianHoanThanh]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[TongThoiGianHoanThanh]"
+                      name="TongThoiGianHoanThanh" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DF - Stage Transporters.Paths[OLE DB Source Output]"
+              endId="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -4114,6 +5174,14 @@ FROM            DetailOrder INNER JOIN
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\DF - Stage ProductType" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
+      DTS:CreationName=""
+      DTS:DTSID="{F117C9A4-8E07-4FBD-A89C-D3D505F69B04}"
+      DTS:From="Package\SQL - Truncate Stage Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 10"
+      DTS:To="Package\DF - Stage Stores" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{EDF319F9-DB9F-4E24-87B5-B30052D286F9}"
@@ -4169,6 +5237,14 @@ FROM            DetailOrder INNER JOIN
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 8"
       DTS:To="Package\DF - Stage InventoryAnalysis" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{54100E3A-3036-40B4-B38C-9A3CC1D2CE3E}"
+      DTS:From="Package\SQL - Truncate Stage Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\DF - Stage ColorProducts" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -4213,11 +5289,19 @@ FROM            DetailOrder INNER JOIN
         <NodeLayout
           Size="173,42"
           Id="Package\DF - Stage Shippers"
-          TopLeft="131,284" />
+          TopLeft="155,249" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\DF - Stage Stores"
+          TopLeft="53,352" />
         <NodeLayout
           Size="175,42"
           Id="Package\DF - Stage Suppliers"
           TopLeft="422,183" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\DF - Stage Transporters"
+          TopLeft="524,360" />
         <NodeLayout
           Size="170,42"
           Id="Package\DF - Stage ZipCode"
@@ -4286,6 +5370,40 @@ FROM            DetailOrder INNER JOIN
                     Point3="24.1,41.5309687665431" />
                   <mssgle:LineSegment
                     End="24.1,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="249.2,100">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-115.2,252"
+              Start="0,0"
+              End="-115.2,244.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.9051782111634" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,70.9051782111634"
+                    Point2="0,74.9051782111634"
+                    Point3="-4,74.9051782111634" />
+                  <mssgle:LineSegment
+                    End="-111.2,74.9051782111634" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-111.2,74.9051782111634"
+                    Point2="-115.2,74.9051782111634"
+                    Point3="-115.2,78.9051782111634" />
+                  <mssgle:LineSegment
+                    End="-115.2,244.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4420,30 +5538,30 @@ FROM            DetailOrder INNER JOIN
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="276,100">
+          TopLeft="253.666666666667,100">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-58.5,184"
+              EndConnector="-12.1666666666667,149"
               Start="0,0"
-              End="-58.5,176.5">
+              End="-12.1666666666667,141.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,70.4387464387464" />
+                    End="0,43.3427638737758" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,70.4387464387464"
-                    Point2="0,74.4387464387464"
-                    Point3="-4,74.4387464387464" />
+                    Point1="0,43.3427638737758"
+                    Point2="0,47.3427638737758"
+                    Point3="-4,47.3427638737758" />
                   <mssgle:LineSegment
-                    End="-54.5,74.4387464387464" />
+                    End="-8.16666666666666,47.3427638737758" />
                   <mssgle:CubicBezierSegment
-                    Point1="-54.5,74.4387464387464"
-                    Point2="-58.5,74.4387464387464"
-                    Point3="-58.5,78.4387464387464" />
+                    Point1="-8.16666666666666,47.3427638737758"
+                    Point2="-12.1666666666667,47.3427638737758"
+                    Point3="-12.1666666666667,51.3427638737758" />
                   <mssgle:LineSegment
-                    End="-58.5,176.5" />
+                    End="-12.1666666666667,141.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4520,6 +5638,40 @@ FROM            DetailOrder INNER JOIN
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="298.333333333333,100">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.1666666666667,264"
+              Start="0,0"
+              End="81.1666666666667,256.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,120.549283909014" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,120.549283909014"
+                    Point2="0,124.549283909014"
+                    Point3="4,124.549283909014" />
+                  <mssgle:LineSegment
+                    End="77.1666666666667,124.549283909014" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.1666666666667,124.549283909014"
+                    Point2="81.1666666666667,124.549283909014"
+                    Point3="81.1666666666667,128.549283909014" />
+                  <mssgle:LineSegment
+                    End="81.1666666666667,256.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -4527,7 +5679,7 @@ FROM            DetailOrder INNER JOIN
     design-time-name="Package\DF - Stage ColorProducts">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="328,42"
           Id="Package\DF - Stage ColorProducts\SRC - ShopBanDoTheThaoNorthwind - ColorProducts"
@@ -4567,7 +5719,9 @@ FROM            DetailOrder INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4603,7 +5757,7 @@ FROM            DetailOrder INNER JOIN
     design-time-name="Package\DF - Stage InventoryAnalysis">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="312,42"
           Id="Package\DF - Stage InventoryAnalysis\SRC  - ShopBanDoTheThaoNorthwind - Inventory"
@@ -4631,9 +5785,7 @@ FROM            DetailOrder INNER JOIN
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4937,13 +6089,13 @@ FROM            DetailOrder INNER JOIN
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="305,42"
-          Id="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales"
-          TopLeft="104,185" />
-        <NodeLayout
           Size="288,42"
           Id="Package\DF - Stage Sales\SRC - ShopBanDoTheThaoNorthwind - Sales"
           TopLeft="116.5,72.5" />
+        <NodeLayout
+          Size="305,42"
+          Id="Package\DF - Stage Sales\DST-  SalesShopBanDoTheThaoStage - stgSales"
+          TopLeft="104,185" />
         <EdgeLayout
           Id="Package\DF - Stage Sales.Paths[OLE DB Source Output]"
           TopLeft="258.5,114.5">
@@ -5071,6 +6223,72 @@ FROM            DetailOrder INNER JOIN
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\DF - Stage Stores">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="291,42"
+          Id="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store"
+          TopLeft="191,39" />
+        <NodeLayout
+          Size="286,42"
+          Id="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores"
+          TopLeft="200,165" />
+        <EdgeLayout
+          Id="Package\DF - Stage Stores.Paths[OLE DB Source Output]"
+          TopLeft="339.75,81">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,84"
+              Start="0,0"
+              End="0,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage Stores\DST - ShopBanDoTheThaoStage - stgStores">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage Stores\SRC  - ShopBanDoTheThaoNorthwind - Store">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\DF - Stage Suppliers">
     <LayoutInfo>
       <GraphLayout
@@ -5145,6 +6363,79 @@ FROM            DetailOrder INNER JOIN
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\DF - Stage Transporters">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="311,42"
+          Id="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter"
+          TopLeft="128,170" />
+        <NodeLayout
+          Size="290,42"
+          Id="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order"
+          TopLeft="130,14" />
+        <EdgeLayout
+          Id="Package\DF - Stage Transporters.Paths[OLE DB Source Output]"
+          TopLeft="275,56">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8.5,114"
+              Start="0,0"
+              End="8.5,106.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,53"
+                    Point2="0,57"
+                    Point3="4,57" />
+                  <mssgle:LineSegment
+                    End="4.5,57" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,57"
+                    Point2="8.5,57"
+                    Point3="8.5,61" />
+                  <mssgle:LineSegment
+                    End="8.5,106.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage Transporters\DST - ShopBanDoTheThaoStage - stgTransporter">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - Stage Transporters\SRC - ShopBanDoTheThaoNorthwind - Order">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
